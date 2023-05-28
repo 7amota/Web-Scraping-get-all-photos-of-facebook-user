@@ -23,8 +23,8 @@ browser.maximize_window()
 
 username = browser.find_element('id' ,"email")
 password = browser.find_element('id' ,"pass")
-username.send_keys("thomas61br2@gmail.com")
-password.send_keys("thomas@Bm9")
+username.send_keys(os.environ.get('USERNAME'))
+password.send_keys(os.environ.get('PASSWORD'))
 password.submit()
 time.sleep(6)
 
